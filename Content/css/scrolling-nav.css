@@ -1,0 +1,767 @@
+/*!
+ * Start Bootstrap - Scrolling Nav (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+
+/* Animation delays 
+.carousel-caption h4:first-child {
+    animation-delay: 1s;
+}
+.carousel-caption h4:nth-child(2) {
+    animation-delay: 2s;
+}
+.carousel-caption button {
+    animation-delay: 3s;
+}
+
+*/
+
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    font-family:proxima-nova,Helvetica Neue,Helvetica,Arial,sans-serif !important;
+}
+
+em{
+    color:#3498db;
+    font-style: normal;
+}
+
+.fa-ico-logo {
+    font-size:4em !important;
+}
+
+@media(min-width:767px) {
+    .navbar {
+        padding: 20px 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .top-nav-collapse { 
+        padding: 0;
+    }
+}
+
+.text-black {
+    color:black;
+}
+
+.text-orange {
+    color:#f68121;
+}
+
+.text-whitesmoke{
+    color:whitesmoke;
+}
+
+.page-scroll {
+    color:#16a085 !important;
+    line-height: 50px !important;
+    font-size: 12px;
+    font-weight:600;
+    letter-spacing:1px;
+    text-shadow: .1px .1px .1px rgba(0,0,0,0.6);
+}
+
+    .page-scroll:hover{
+        color:#3498db !important;
+    }    
+
+    .page-scroll-active{
+        background: #ecf0f1 !important;
+        font-weight:bolder;
+        /*color:#f68121 !important; */
+    }
+/*
+#myCarousel::after {
+    background:url(../img/bg-wave.png) repeat;
+    content:' ';
+    height:11px;
+    position:relative;
+    display:inline-block;
+    width:100%;
+    top:-9px;
+    left:0;
+    z-index:3;
+}
+*/
+    #myCarousel .carousel-inner > .item{
+        
+        width: 100%;
+    }
+
+    #myCarousel .carousel-control-mine{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 3%;
+        font-size: 20px;
+        color:#fff;
+        text-align: center;
+        opacity: .5;
+    }
+    #myCarousel .carousel-control-mine.left{
+        left: 0;
+    }
+    #myCarousel .carousel-control-mine.right{
+        right: 10px;
+    }
+
+.carousel-arrow {
+    position:absolute;
+    top:45%;
+}
+
+.carousel-caption {
+    width:60%;
+    left:3% !important;
+    padding:0px !important;
+    height:100%;
+    bottom:0px !important;
+}
+    .carousel-caption a{
+        color: #fff !important;
+        background:#424459;
+        border:none;
+    }
+    .carousel-caption a:hover{
+        background-color:transparent;
+    }
+
+.carousel-inner > .item > img {
+    min-height:170px !important;
+}
+
+.carousel-text-design{
+    /*color:#CF372D;*/
+    color:#3498db;
+    font-weight: 600;
+    font-size: 4vw;
+}
+
+.navbar-default .navbar-nav>li>p{
+    color: white;
+    line-height: 3.5em;
+    padding: 0 25px;
+    margin:0;
+    font-size: .85em;
+    font-weight: 700;
+}
+
+.navbar-default{
+    border-bottom:3px solid #3498db !important;
+    background:#fff !important;
+    margin-bottom:0px !important;
+}
+
+.navbar-fixed-top{
+
+    border-bottom: 3px solid #f68121;
+    background: #fff;
+}
+
+.header-container {
+    margin:0;
+    width: 100%;
+}
+.header-first{
+    background-color:#3498db;
+    line-height: 3.5em;
+}
+
+.header-second{
+    background-color: #fff;
+}
+
+.header-second > .navbar-header{
+
+    padding:0px 20px;
+}
+
+.header-logo{
+
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.header-logo > img{
+    border-left: 3px solid #34495e;
+    border-right: 3px solid #34495e;
+    border-bottom: 3px solid #34495e;
+}
+
+.home-logo{
+
+    width: 120px;
+    height: 60px;
+    padding-bottom: 15px;
+}
+
+.home-section {
+    height: auto;
+    /*border-top:2px solid #f68121;
+    border-bottom:2px solid #f68121;*/
+    margin: 0 12%;
+    padding-bottom: 100px;
+    text-align: center;
+    /*background: #232323;*/
+    background: #fff;
+}
+
+    .home-section a {
+        color:#424459;
+        /*border-radius:50em;*/
+        line-height: 5em;
+        font-weight:bold;
+        text-transform:none;
+        text-decoration:none;
+        padding:.5em 0;
+        font-size: 12px;
+        border:2px solid #424459;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .home-section a:hover {
+        color:#3498db;
+        text-decoration: none;
+        font-weight: bolder;
+        border:2px solid #f68121;
+    }
+
+.home-welcome{
+    margin: 30px 0 10px 0;
+}
+    .home-welcome p {
+        color:#bcbdc7 !important;
+        font-size:14px;
+        line-height:1.5;
+        text-align:justify;
+        font-weight:bold;
+        padding-top:5px;
+    }
+
+    .home-welcome h2{
+        line-height: 3em;
+        margin: 0;
+        font-weight: bold;
+    }
+
+    .home-welcome div{
+        margin:20px 0;
+    }
+    .home-welcome .row > div:first-child{
+        padding-left: 80px;
+        text-align: left;
+    }
+    .home-welcome .row > div:last-child{
+        /*border:1px solid #ededed;
+        border-left:5px solid #f68121;
+        border-radius:1%;
+        background:#f3f3f3;*/
+    }
+    .home-welcome div > h1{
+        color:#424459;
+        margin-top: 0;  
+        text-align: center;
+        text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+        /*font-family: "Comic Sans MS", cursive, sans-serif !important;*/
+    }
+
+.air-body{
+    margin: 70px 0px !important;
+}
+
+.air-body h4{
+    margin:0;
+    line-height:2em;
+    font-weight:bold;
+    font-family: "roboto", Arial, sans-serif;
+}
+
+.air-body p{
+    font-family: "roboto", Arial, sans-serif;
+    font-weight: lighter;
+    font-size: 1.8rem;
+    line-height: 1.6;
+}
+
+.col-reserve{
+    padding:0 !important;
+    background: #f3f3f3;
+    border: 1px solid #ededed;
+}
+    .col-reserve .form-group{
+        margin-top: 10px;
+    }
+    .col-reserve > div{
+        padding: 0 !important;
+    }
+    .col-reserve h4{
+        color: #bcbdc7;
+        font-weight: bold;
+        line-height: 3em;
+        background: rgba(66,68,89,.8);
+        border-left: 5px solid rgb(66,68,89);
+        margin:0;
+    }
+
+.col-contact {
+    padding:0 !important;
+    background: #f3f3f3;
+    border: 1px solid #ededed;
+}
+    .col-contact .form-group{
+        margin-top: 20px;
+    }
+    .col-contact > div{
+        padding: 0 !important;
+    }
+    .col-contact h4{
+        color: #fff;
+        font-weight: bold;
+        line-height: 3em;
+        background: rgba(66,68,89,.8);
+        margin:0;
+    }
+
+.home-spacing {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: 100%;
+}
+    .home-spacing:hover
+    {
+        box-shadow: 0px 2px 1px #232323;
+        z-index: 2;
+        
+        -webkit-transition: all 300ms ease-in-out;
+        -webkit-transform: scale(1.01);
+        -ms-transition: all 300ms ease-in-out;
+        -ms-transform: scale(1.01);   
+        -moz-transition: all 300ms ease-in-out;
+        -moz-transform: scale(1.01);
+        transition: all 300ms ease-in-out;
+        transform: scale(1.1);
+    }
+
+    .intro-header {
+    height:100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    color: #f8f8f8;
+    background: url(../img/health_banner.jpg) no-repeat center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#home-card1{
+    background-color: rgba(52, 152, 219,.1);
+}
+
+#home-card2{
+    background-color: rgba(39, 174, 96,.4);
+}
+
+#home-card3{
+    background-color: rgba(52, 152, 219,.1);
+}
+
+#home-card4{
+    background-color: rgb(143, 206, 197) !important;
+}
+
+.home-lead {
+    color:#424459;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Comic Sans MS", cursive, sans-serif !important;
+    padding:1em 0 20px 20px;
+    margin-bottom:0px;
+}
+
+.intro-message {
+    position: relative;
+    padding-top:20%;
+}
+    .intro-message h2 {
+        font-size:3vw;
+        margin:0 !important;
+        line-height:1.8em;
+    }
+
+    .blur{
+        background: rgba(0,0,0,.5);
+    }
+
+.intro-message > h4 {
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+}
+
+.btn-circle {
+    border-radius:50%;
+}
+
+    .btn-circle:hover {
+        background-color:rgba(255,255,255,0.5) !important;
+    }
+
+.favicon-logo {
+    width:80px;
+    height:60px;
+    margin-top:5px;
+}
+
+footer{
+    background: #333333;
+    border-top: 5px solid #424459;
+}
+
+
+.footer-map{
+    height: 200px;
+    width: 100%;
+    margin-bottom:50px;
+}
+
+footer h4{
+    color:#ecf0f1;
+    font-weight: bold;
+    line-height: 3em;
+}
+
+footer header{
+
+    color:black;
+    padding: 5px 0;
+    font-size: 20px;
+}
+
+footer section{
+    padding: 5px 0;
+}
+
+footer .list-group > li{
+    color:black;
+    padding: 2px 0;
+    list-style-type: none;
+    line-height: 2em;
+}
+
+footer .list-group > li a{
+    color: #999999;
+    text-decoration: none;
+    font-weight:bold;
+}
+.footer-text{
+    color:#ecf0f1;
+}
+.footer-social{
+    font-size:20px !important;
+}
+
+.footer-note{
+    background: #111111;
+    width:100%;
+}
+.footer-contact{
+    color:black;
+    margin: 5px 0;
+    font-family: sans-serif;
+}
+
+.footer-contact small{
+    display:block;
+    font-size: 10px;
+}
+
+.footer-contact em{
+    color:#f68121;
+}
+
+.copyright{
+    color:#999;
+    font-size:80%;
+    padding:10px 0;
+    margin: 0;
+}
+
+.owner{
+    background: white;
+    padding:10px 0;
+    border:2px solid #f68121 ;
+    border-radius: 10%;
+}
+
+.owner h5{
+    text-align: left;
+}
+
+.contact-info {
+    text-align:left;
+    font-family: sans-serif;
+}
+
+.contact-info small{
+    display:block;
+    line-height:3em;
+    font-size: 14px;
+    padding: 0 15px;
+}
+
+.intro-section {
+    height: 100%;
+    /*padding-top: 150px;*/
+    text-align: center;
+    background: #fff;
+}
+
+.about-section {
+    height: auto;
+    padding-top: 20px;
+    /*border-top:2px solid #f68121;*/
+    margin:0 15%;
+    padding-bottom: 100px;
+    text-align: center;
+    background: #fff;
+}
+
+.services-section {
+    height: auto;
+    padding-top: 20px;
+    margin:0 15%;
+    padding-bottom: 100px;
+    /*border-top:2px solid #f68121;*/
+    /*border-bottom:2px solid #f68121;*/
+    text-align: center;
+    background: #fff;
+}
+.contact-section {
+    height: auto;
+    padding-top: 20px;
+    margin:0 15%;
+    padding-bottom: 100px;
+    /*border-top:2px solid #f68121;*/
+    /*border-bottom:2px solid #f68121;*/
+    text-align: center;
+    background: #fff;
+}
+
+.career-section{
+    height: auto;
+    margin:0 15%;
+    /*border-top:2px solid #f68121;*/
+    padding-top: 20px;
+    padding-bottom: 100px;
+    text-align: center;
+    background: #fff;
+}
+
+.home-section h3{
+    font-weight:600;
+    font-size:15px;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+    color:#424459;
+    padding: 0 20px;
+}
+
+
+.content-section-a {
+    /*background-color: #f8f8f8;*/
+}
+
+.content-section-b {
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+    padding:30px 0;
+}
+
+.home-section .section-heading-spacer {
+    float: left;
+    width: 100%;
+    border-top: 3px solid #3498db;
+}
+
+.section-heading-spacer {
+    float: left;
+    width: 200px;
+    border-top: 3px solid #e7e7e7;
+}
+.lead {
+    font-size: 14px !important;
+    font-weight: 400;
+    text-align:left;
+}
+
+.contact-map{
+    height: 370px;
+    width: 100%;
+    margin-bottom:50px;
+}
+
+
+.fixed-header-top{
+    background:url(../img/background1.jpg) no-repeat center center;
+    /* Set a specific height */
+    min-height: 150px;
+    position: absolute;
+    top:0;
+    right: 0;
+    left: 0;
+    max-width: 100%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.parallax1 {
+    /* The image used */
+    /*background: url(../img/health_paralax2.jpg) no-repeat center center;*/
+    background: url(../img/background1.jpg) no-repeat center center;
+    
+    /* Set a specific height */
+    min-height: 400px; 
+    /*height: auto;*/
+    height:95%;
+    position: absolute;
+    top:0;
+    right: 0;
+    left: 0;
+    max-width: 100%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.parallax2 {
+    /* The image used */
+    background: url(../img/health_paralax1.jpg) no-repeat center center;
+
+    /* Set a specific height */
+    min-height: 400px; 
+    height: auto;
+    max-width: 100%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-size: cover;
+}
+.parallax3 {
+    /* The image used */
+    background: url(../img/health_paralax3.jpg) no-repeat center center;
+
+    /* Set a specific height */
+    min-height: 400px; 
+    height: auto;
+    max-width: 100%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+@media(max-width:990px) {
+    
+    .about-section {
+        margin: 0;
+    }
+    
+    .services-section {
+        margin: 0;
+    }
+
+    .contact-section {
+        margin: 0;
+    }
+
+    .career-section {
+        margin: 0;
+    }
+}
+
+@media (max-width:767px) {
+
+    .intro-message {
+        padding-top:10%;
+    }
+    .fixed-header-top {
+        display:none;
+    }
+
+    .about-section {
+        margin-top:100px;
+    }
+    
+    .services-section {
+        margin-top:100px;
+    }
+
+    .contact-section {
+        margin-top:100px;
+    }
+
+    .career-section {
+        margin-top:100px;
+    }
+
+    .navbar-ex1-collapse.pull-right {
+        float: left !important;
+        width:100%;
+    }
+
+    .navbar.navbar-default.top-nav-collapse{
+        position: fixed;
+        right: 0;
+        left: 0;
+        top: 0;
+        z-index: 1030;
+        border-width: 0 0 1px;
+    }
+
+    .page-scroll{
+        line-height: 20px !important;
+    }
+
+    .intro-divider {
+        width: 100%;
+    }
+
+    .carousel-caption {
+        /*display:none;*/
+    }
+
+    .carousel-caption > h1{
+        font-size: 15px;
+    }
+    #header-contact {
+        display:none;
+    }
+    #header-contact-collapse {
+        display:block !important;
+    }
+    #myCarousel {
+        margin-top:80px;
+    }
+    .parallax1{
+        height: 90%;
+    }
+}
+
+@media (max-width:415px) {
+
+    .intro-message {
+        padding-top: 20%;
+    }
+}
