@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <!--<link rel="icon" href="Content/img/favicon.png" type="image/x-icon" />-->
+    <link rel="stylesheet" type="text/css" href="Content/css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="Content/css/animate.min.css">
+    <link rel="stylesheet" href="Content/css/scrolling-nav.css">
+    <link rel="stylesheet" href="Content/css/bootstrap.min.css">
+    <link href="Content/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="Content/font-awesome/css/font-awesome-animation.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <!-- Navigation -->
+    <nav class="navbar navbar-default top-nav-collapse" role="navigation">
+        <div class="header-first">
+            <div class="container" id="header-contact">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <p><i class="fa fa-plane fa-fw faa-passing-reverse animated faa-slow" style="font-size:20px;"></i> Call Now: +639175703026 / +639954582179</p>
+                    </li>
+                    <li>
+                        <p><i class="fa fa-envelope-o fa-fw faa-shake animated faa-slow" style="font-size:20px"></i> Email: sample@yahoo.com</p>
+                    </li>
+                </ul></marquee>
+            </div>
+        </div>
+        
+        <div class="container header-second">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="header-logo">
+                    <img class="img-responsive" src="Content/img/oliveLogo.png" alt="">
+                </div>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse pull-right">
+                <ul class="nav navbar-nav">
+                    <li id="header-contact-collapse" style="display:none;">
+                        <p style="color:#16a085;">
+                            <i class="fa fa-phone fa-fw faa-bounce animated faa-slow"></i> Call Now: +639175703026 / +639954582179
+                        </p>
+                        <p style="color:#16a085;">
+                            <i class="fa fa-envelope-o fa-fw faa-shake animated faa-slow"></i> Email: emailsample@yahoo.com
+                        </p><hr />
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="@Url.Content("~/Home")">Home</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="@Url.Content("~/About")">About Us</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="@Url.Content("~/ProductAndServices")">Products & Services</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="@Url.Content("~/Client")">Clients</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="@Url.Content("~/Contact")">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+    <!-- -->
+        
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                
+                <img src="Content/img/slider1large.jpg" alt="" class="img-responsive" />
+                <div class="carousel-caption" role="option">
+                    <div class="intro-message">
+                        <h2 class="blur" data-animation="animated fadeInLeft" style="animation-delay: 1s;border-radius:55px 10px 0px 0px;">
+                            Sample <span class="carousel-text-design">Emphasize </span> Sample 
+                        </h2>
+                        <h2 class="blur" data-animation="animated lightSpeedIn" style="animation-delay: 2s;border-radius:0px 0px 55px 10px;">
+                            Sample  <span class="carousel-text-design">Emphasize </span>
+                        </h2>
+                        <h2 data-animation="animated zoomIn" style="animation-delay: 3s;">
+                            <a class="btn btn-default btn-sm text-orange" href="@Url.Content("~/About")">
+                                <b>About | Us <em><i class="fa fa-chevron-right"></i></em></b>
+                            </a>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="Content/img/slider2large.jpg" alt="" class="img-responsive" />
+                <div class="carousel-caption" role="option">
+                    <div class="intro-message">
+                        <h2 data-animation="animated fadeInDown" style="animation-delay: 1s;">
+                            Sample 
+                            <span class="carousel-text-design" data-animation="animated fadeInUp" style="animation-delay: 1.8s;">Emphasize </span>
+                        </h2>
+                        <h2 data-animation="animated fadeInUp" style="animation-delay: 2.5s;">
+                            Sample 
+                            <span class="carousel-text-design" data-animation="animated fadeInUp" style="animation-delay: 3.3s;">Emphasize </span>
+                        </h2>
+                        <h2 data-animation="animated zoomIn" style="animation-delay: 4s;">
+                            Sample 
+                            <a class="btn btn-default btn-sm text-orange" href="@Url.Content("~/Services")">
+                                <b>View More <em><i class="fa fa-chevron-right"></i></em></b>
+                            </a>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="Content/img/slider3large.jpg" alt="" class="img-responsive" />
+                <div class="carousel-caption" role="option">
+                    <div class="intro-message">
+                        <h2 class="blur" data-animation="animated bounceInLeft" style="animation-delay: 1s;border-radius:0px 100px 0px 0px;">
+                            Sample <span class="carousel-text-design">Emphasize </span>
+                        </h2>
+                        <h2 class="blur" data-animation="animated bounceInRight" style="animation-delay: 2s;border-radius:0px 0px 100px 0px;">
+                            Sample <span class="carousel-text-design">Emphasize </span> Sample 
+                        </h2>
+                        <h2 data-animation="animated zoomInDown" style="animation-delay: 3s;">
+                            <a class="btn btn-default btn-sm text-orange" href="@Url.Content("~/Career")">
+                                <b>Let's Talk! <em><i class="fa fa-chevron-right"></i></em></b>
+                            </a>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-mine left" style="background-image: 0" href="#myCarousel" role="button" data-slide="prev">
+            <i class="fa fa-chevron-left carousel-arrow"></i>
+        </a>
+        <a class="carousel-control-mine right" href="#myCarousel" role="button" data-slide="next">
+            <i class="fa fa-chevron-right carousel-arrow"></i>
+        </a>
+    </div>
+
+    <section id="about" class="home-section">
+        <div class="container">
+            <div class="row home-welcome ">
+                <div class="row">
+                    <div class="col-lg-5 col-sm-5 ">
+                        <i class="fa fa-plane fa-fw faa-float animated" style="font-size:80px;width:80px;position: absolute;left: 10px;top:0px;"></i>
+                        <h1><b>Welcome To <em>Olive Air</em></b></h1>
+                        <!--<h1>Our Home</h1>-->
+                    </div>
+                    <div class="col-lg-7 col-sm-offset-2 col-sm-7 text-left">
+                        <p>
+                            We will help you acquire parts for all airplane models that suite's in your needs. We have a large inventory of parts available for immediate purchase, and also provide parts repair and services.
+                        </p>
+                        <a href="@Url.Content("~/About")">Parts on <em>Board</em> <i class="fa fa-arrow-circle-o-right fa-lg fa-fw"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!--<div class="parallax2"></div>-->
+
+            <div class="row">
+                <div class="col-lg-4 col-sm-4 home-spacing" id="home-card1">
+                    <h3><i class="fa fa-cogs fa-ico-logo fa-fw"></i></h3>
+                    <h3>What we have</h3>
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+
+                    <div class="col-lg-12" style="background: rgba(255,255,255,0.2);">
+                        <p class="home-lead">
+                            We're providing aircraft components and professional services that you need.
+                        </p>
+                        <a href="@Url.Content("~/Services")"><em>Choose</em> Now! <i class="fa fa-arrow-circle-o-right fa-lg fa-fw"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-4 home-spacing" id="home-card2">
+                    <h3><i class="fa fa-sitemap fa-ico-logo fa-fw"></i></h3>
+                    <h3>Our Vision</h3>
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+
+                    <div class="col-lg-12" style="background: rgba(255,255,255,.6);">
+                        <p class="home-lead">
+                            Get your company on the path to success. <br><b>Strategize. Organize. Globalize.</b>
+                        </p>
+                        <a href="@Url.Content("~/About")">Sight with<em> Us!</em> <i class="fa fa-arrow-circle-o-right fa-lg fa-fw"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-4 home-spacing" id="home-card3">
+                    <h3><i class="fa fa-users fa-ico-logo fa-fw"></i></h3>
+                    <h3>Be One of them</h3>
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <div class="col-lg-12" style="background: rgba(255,255,255,.6);">
+                        <p class="home-lead">
+                            We guaranteed professional and the best services on our client world wide.
+                        </p>
+                        <a href="@Url.Content("~/Career")"><em>Our</em> Clients! <i class="fa fa-arrow-circle-o-right fa-lg fa-fw"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row air-body">
+                <div class="row">
+                    <div class="col-lg-7 col-sm-7 text-left">
+                        <h2>Olive Air <em>Enterprises</em></h2>
+                        <p>
+                            Olive Air Enterprises specializes in the repair, supply and overhaul of fixed-wing airplane parts and components. If you need a part for your rotary or fixed-wing aircraft, our skilled staff can help you find one that perfectly meets your requirements and budget. We offer new, factory new, serviceable, repaired, overhauled, and as removed parts for a number of aircraft manufacturers.
+                        </p>
+                        <h4>Aircraft parts and services from <em>Olive Air</em></h4>
+                        <p>
+                            We understand how much our clients have riding on their aircraft. Whether it is used for personal transport, business, medical or government and military agencies, your aircraft needs fast and professional services that you can count on. For that reason we have tailored our services to assist our clients, regardless if the requirements are routine ordering, critical-low stock or AOG. Feel free to view our inventory and contact us in your own convenient.
+                        </p>
+                    </div>
+                    <div class="col-lg-4 col-sm-5 col-lg-offset-1 col-reserve">
+                        <div class="col-sm-12">
+                            <h4>Email Us!</h4>
+                        </div>
+                        <form class="col-s12" onsubmit="return sendEmail('reservation',this);" method="GET">
+                            <div class="form-group input-field col-sm-6" style="padding-right:7px;">
+                                <label class="pull-left"><small>First Name: <span class="text-muted"> Required</span></small></label>
+                                <input type="text" class="form-control white-text" id="compose-fname" required />
+                            </div>
+                            <div class="form-group input-field col-sm-6" style="padding-left:7px;">
+                                <label class="pull-left"><small>Last Name: <span class="text-muted"> Required</span></small></label>
+                                <input type="text" class="form-control white-text" id="compose-lname" required />
+                            </div>
+                            <div class="form-group input-field col-sm-12">
+                                <label class="pull-left"><small>Email: <span class="text-muted"> Required</span></small></label>
+                                <input type="email" class="form-control white-text" id="compose-email" required />
+                            </div>
+                            <div class="form-group input-field col-sm-12">
+                                <label class="pull-left">Your Message: <span class="text-muted"> <small>Required</small></span></label>
+                                <textarea class="form-control materialize-textarea white-text" id="compose-message" rows="6" required></textarea>
+                            </div>
+                            <div class="form-group input-field col-sm-12">
+                                <label class="pull-left" id="rCompose-output"><small></small></label>
+                                <button type="submit" id="send-button" class="btn btn-xs btn-primary pull-right">Send Message</button>
+                                <br />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<!-- END OF BODY-->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3 col-lg-3">
+                    <header>
+                        <h4><em>Social</em> Media's</h4>
+                    </header>
+                    <section>
+                        <ul class="list-group">
+                            <li>
+                                <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook fa-fw footer-social" style="color:#3b5998;"></i> Facebook</a>
+                            </li>
+                            <li>
+                                <a href="https://www.twitter.com" target="_blank">><i class="fa fa-twitter fa-fw footer-social" style="color:#32cdfd;"></i> Twitter</a>
+                            </li>
+                            <li>
+                                <a href="https://www.plus.google.com" target="_blank">><i class="fa fa-google-plus fa-fw footer-social" style="color:#da422d;"></i> Google +</a>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+                <div class="col-sm-4 col-lg-4">
+                    <header>
+                        <h4><em>Contact</em> Information </h4>
+                    </header>
+                    <section>
+                        <ul class="list-group">
+                            <li>
+                                <span class="text-muted"><b><i class="fa fa-location-arrow fa-fw"></i> Address: Sample Complete Address</b></span>
+                            </li>
+                            <li>
+                                <span class="text-muted"><b><i class="fa fa-mobile fa-fw"></i> Mobile: +639175703026 / +639954582179</b></span>
+                            </li>
+                            <li>
+                                <span class="text-muted"><b><i class="fa fa-envelope-o fa-fw"></i> Email: SampleEmail@yahoo.com</b></span>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+                <div class="col-sm-4 col-lg-4">
+                    <header>
+                        <h4><em>Location</em> Map</h4>
+                    </header>
+                    <section>
+                        <div class="footer-map" id="map"></div>
+                    </section>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <div class="footer-note">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <small><p class="copyright text-default small text-left"><b>Copyright &copy; Olive Air Enterprise 2017. All Rights Reserved</b></p></small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--</div>-->
+
+    <script type="text/javascript" src="Scripts/jquery/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="Scripts/bootstrap/bootstrap.min.js"></script>
+    <script type="text/javascript" src="Scripts/bootstrap/bootstrap-filestyle.min.js"></script>
+    <script type="text/javascript" src="Scripts/jquery/jquery.easing.min.js"></script>
+    <!--<script type="text/javascript" src="~/Scripts/js/scrolling-nav.js"></script>-->
+    <script type="text/javascript" src="Scripts/js/happyhome.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCL2Lvtb7U18RGdx2ghm1dGl3e8sVgUGG4&callback=initMap"></script>
+    <script type="text/javascript" src="Scripts/js/Home/homeJS.js"></script>
+</body>
+</html>
